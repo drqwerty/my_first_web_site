@@ -1,0 +1,209 @@
+body {
+  background-color: white;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  text-align: center;
+}
+
+nav {
+  float: right;
+}
+
+nav * {
+  vertical-align: middle;
+}
+
+[role="button"] {
+  padding-left: 0px;
+  height: 30px;
+  width: 30px;
+  background: url(images/sprite.png) -132px -38px;
+  opacity: .55;
+  display: inline-block;
+}
+
+[role="button"]:hover {
+  opacity: .75;
+}
+
+.button_guguel_apps:hover {
+  text-decoration: none !important;
+}
+
+a {
+  text-decoration: none;
+  padding: 5px;
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #252525;
+}
+
+#logo {
+  padding-top: 200px;
+}
+
+.container_busqueda {
+  position: relative;
+  border: 0.5px ridge;
+  width: 505px;
+  height: 40px;
+  display: inline-block;
+  margin-top: 30px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.container_busqueda * {
+  vertical-align: middle;
+}
+
+#text_field {
+  position: absolute;
+  left: 15px;
+  width: 85%;
+  height: 40px;
+  border: 0;
+  padding: 0;
+}
+
+#text_field:focus {
+  outline: 0;
+}
+
+.container_busqueda.sombrita,
+.container_busqueda:hover {
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.micro_busqueda {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* The actual popup */
+.popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1000;
+  top: 125%;
+  left: 95.5%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popuptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.show {
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.botones {
+  margin: 30px 0 30px 0;
+}
+
+.button_busqueda {
+  width: 150px;
+  height: 34px;
+  border: 0;
+  color: #757575;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.button_busqueda:hover {
+  color: black;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 1.2px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  position: absolute;
+  bottom: 8.6px;
+  left: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer div{
+  height: 40px;
+  background-color: #f2f2f2;  
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.madeIn {
+  text-align: left;
+  color: grey;
+  border: 1px ridge black;
+  padding-left: 10px;
+  padding-top: 10px;  
+}
+
+.legalidad {
+  border: 1px ridge black;  
+}
+
+.legalidad p {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.legalidad p:first-child {
+  padding-left: 0;
+}
+
+.legalidad div {
+  display: inline-block;
+  width: 49%;
+  text-align: left;
+  padding-top: 15px;  
+}
+
+.legalidad div:last-child p{
+  float: right;
+}
+
